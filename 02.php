@@ -44,5 +44,5 @@
     echo "(" . $pet -> position['x'] . ", " . $pet -> position['y'] . ")"; // 因為 position 是 protected，無法直接觀看
     echo "<br>";
     
-    
+// 多註解
 ?>
