@@ -10,8 +10,8 @@
         }
         
         public function moveTo($x, $y){
-            $this -> position['x'] = $x;
-            $this -> position['y'] = $y;
+            $this -> position['x'] += $x; // 讓每次移動都能做累加
+            $this -> position['y'] += $y; // 讓每次移動都能做累加
             
             return $this -> position;
         }
@@ -44,5 +44,4 @@
     echo "(" . $pet -> position['x'] . ", " . $pet -> position['y'] . ")"; // 因為 position 是 protected，無法直接觀看
     echo "<br>";
     
-// 多註解
 ?>
